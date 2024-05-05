@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUMKIES</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<section>
+  <nav> 
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#Menu">Menu</a>
+<a href="#Contact">Contact Us</a>
+</div>
+
+  <div id="main">
+
+<span style="font-size:30px;cursor:pointer;color:rgb(87, 48, 37)" onclick="openNav()">☰ </span>
+  </div>
+</nav>
+</section>
+</head>
+<body>
+  
+<section class="home" id="home">
+<div class="Parallax">
+  <img class="layer_1" src="images/milk 1.png">
+  <img class="layer_2" src="images/Cookie.png">
+  <img class="layer_3" src="images/milk 2.png">
+  <img class="layer_4" src="images/milk 3.png">
+  <img class="layer_5" src="images/milk 4.png">
+  <img src="images/milk big.png">
+</section>
+
+<section class="about" id="about">
+    <div class="content">
+    <a href="#about"></a>
+    <h1>YUMKIES</h1><br><h2>About</h2><br><p>Yumkies cookies are a work of culinary art, created with an unwavering focus on precision and attention to detail. The initial sampling transports one to a realm of unparalleled flavor and mouthfeel from the moment one's teeth first meet morsel. Each cookie crafts a culinary canvas, judiciously joining fine fixings in finely tuned proportions to fashion a flavorful fugue frolicking freely throughout one's palate. Yumkies has a wide range of options to please every sweet desire, whether you're wanting the classic elegance of a chocolate chip cookie or the tempting charm of a snickerdoodle pastry.</p><br>
+      <p>What sets Yumkies cookies apart is not just their extraordinary taste, but also the love and care that goes into every batch. Each cookie is lovingly handmade, ensuring that every bite is infused with warmth and authenticity. From the careful selection of ingredients to the artful baking process, Yumkies cookies are a testament to the craftsmanship and dedication of their creators. With each bite, you can taste the passion and commitment that have made Yumkies a beloved favorite among cookie connoisseurs worldwide.</p><br>
+    <p>But perhaps the true magic of Yumkies cookies lies in the joy they bring to those who indulge in them. Whether shared with loved ones over a cup of coffee or savored in solitary bliss, these cookies have a remarkable ability to brighten even the dreariest of days. With their irresistible aroma and heavenly taste, Yumkies cookies are more than just a sweet treat, they're a source of happiness and delight, creating cherished memories one delicious bite at a time.</p>
+ <br>
+  </div>
+  
+  <section class="Menu" id="Menu">
+    <div class="container">
+        <div class="products-container">
+            <div class="product" data-name="p-1">
+              <h1><b>Our Bestsellers</b></h1>
+                <img src="images/chochipcookie.png">
+                <h3>Chocolate Chip Cookie</h3>
+                <div class="price">₱100.00</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="images/cinamoncookie.png">
+                <h3>Cinnamon Crunch Cookie</h3>
+                <div class="price">₱80.00</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="images/chocooverload.png">
+                <h3>Double Choco Cookie</h3>
+                <div class="price">₱100.00</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="images/blueberrycookie.png">
+                <h3>Blueberry Muffin</h3>
+                <div class="price">₱120.00</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="images/puenutbuttercookie.png">
+                <h3>Peanut Butter Cookie</h3>
+                <div class="price">₱80.00</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="images/strawberrymilkshakecookie.png">
+                <h3>Strawberry Milkshake Cookie</h3>
+                <div class="price">₱100.00</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<footer>
+  <div class="footer-content">
+    <section class="Contact" id="Contact">
+      <div class="contact">
+    <h1>Contact Us</h1>
+  </div>
+    <p>&copy; 2024 Yumkies. All rights reserved.</p>
+  </div>
+  <p>email:Yumkies@gmail.com</p><p>contact no:09219732681</p><p>X Acc:Mimopi1</p><p>FB Acc:Ralph Quirsten L. Baja</p>
+</footer>
+
+<script type="text/javascript">
+  
+  let layer_1 = document.querySelector('.layer_1');
+  let layer_2 = document.querySelector('.layer_2');
+  let layer_3 = document.querySelector('.layer_3');
+  let layer_4 = document.querySelector('.layer_4');
+  let layer_5 = document.querySelector('.layer_5');
+
+  window.onscroll = function(){
+    let Y = window.scrollY;
+
+    layer_1.style.transform = 'translateY(' + Y / 2 + 'px)';
+    layer_2.style.transform = 'translateY(' + Y / 1.5 + 'px)';
+    layer_3.style.transform = 'translateY(' + Y / 5.5 + 'px)';
+    layer_4.style.transform = 'translateY(' + Y / 2.5 + 'px)';
+    layer_5.style.transform = 'translateY(' + Y / 2 + 'px)';
+  }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(25,26,92,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#f4d19f";
+  }
+</script>
+
+</body>
+</html>

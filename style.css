@@ -1,0 +1,147 @@
+.main_content {
+  display: flex;
+  position: static;
+  width: 1442px;
+  background: #f4d19f;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Lilita One";
+  transition: background-color .5s;
+  background-color: #ffd190;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.Parallax {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  width: 100%;
+}
+
+.Parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.content {
+  width: 100%;
+  top: 15vh;
+  margin-bottom: 10vh;
+  background-color: #ffdab1;
+  position: relative;
+  text-align: center;
+}
+
+.product img {
+  width: 50%;
+  height: 50%; 
+  object-fit: cover; 
+  border-radius: 8px 8px 0 0; 
+}
+
+section nav {
+  display: flex;
+  content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  margin-top: -2vh;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffd190;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #c49b62;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #e5b470;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.product {
+  width: 100%;
+  top: 0vh;
+  background-color: #e1b887;
+  position: relative;
+  text-align: center;
+}
+
+#menu {
+  margin-top: 15vh;
+}
+footer {
+  background-color: #c49b62;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+@media (orientation: portrait) {
+  .content {
+    top: -50vh;
+    margin-top: 0; 
+    margin-bottom: 0; 
+  }
+  
+  .product {
+    padding-bottom: 20px; 
+  }
+
+  .Parallax {
+    top: 50%; 
+  }
+}
